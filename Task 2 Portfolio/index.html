@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Block -->
+    <div class="container">
+        <section id="header">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="#"><span>MUAZ</span>Z</a>
+                </div>
+                <div class="nav-menu">
+                    <ul id="sidemenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="bottom-left">
+                    <h1 class="name">Muazzam <span>Sindhu</span></h1>
+                    <h3 class="profession"><strong>~Web Developer</strong></h3>
+                    <p class="short-desc"> I am passionate about staying current with the latest web development trends and best practices, constantly seeking opportunities to enhance my skill set. </p>
+                    <a href="assets/Muazzam.pdf" class="btn-cv" target="_blank" download>Download Resume</a>
+                </div>
+                <div class="bottom-right">
+                    <a href="https://www.facebook.com/muazzam.sandhu.148"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/muazzam7454/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/muazzam-sindhu-673618243"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Block -->
+        <section id="about">
+            <div class="about-left">
+                <img src="assets/muazzam.png" alt="">
+            </div>
+            <div class="about-right">
+                <div class="section-title">
+                    <h2 class="sub-title">About Me</h2>
+                    <h3 class="title">Web Developer</h3>
+                </div>
+                <p class="desc">
+                    "I am a highly skilled web developer with a strong foundation in front-end and back-end
+                    technologies. My passion for creating visually appealing and user-friendly websites, combined with
+                    my expertise in programming languages such as HTML, CSS, JavaScript, and proficiency in frameworks
+                    like React and Node.js, allows me to craft responsive and dynamic web solutions. I am also
+                    experienced in database management, ensuring seamless data integration. My commitment to staying
+                    updated with the latest industry trends and my dedication to delivering projects on time make me a
+                    valuable addition to any web development team."
+                </p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>UI/UX Design </span><br />
+                            Designing Web/App Interfaces
+                        </li>
+                        <li>
+                            <span>Web Development </span><br />
+                            Web App Development
+                        </li>
+                        <li>
+                            <span>Digital Marketing</span><br />
+                            Building Businesses
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>2023-Current</span><br />
+                            BSCS from Virtual University of Pakistan
+                        </li>
+                        <li>
+                            <span>2016-2018</span><br />
+                            ICs from Govt. Degree College Raiwind, Lahore
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Block-->
+
+        <section id="service">
+            <div class="section-title">
+                <h2 class="sub-title">My Services</h2>
+                <h3 class="title">A Brief Of Offering Services</h3>
+            </div>
+            <div class="services">
+                <div>
+                    <i class="fa-brands fa-battle-net"></i>
+                    <h2>Branding</h2>
+                    <p>Elevate your brand with our comprehensive branding services. From logo design to brand strategy, we'll help you make a memorable impression that sets you apart in today's competitive digital landscape.</p>
+                </div>
+                <div class="services">
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Print Design</h2>
+                    <p>Unlock the power of print with our exceptional design services. From eye-catching brochures to stunning posters, we'll transform your ideas into tangible, memorable materials that leave a lasting impact.</p>
+                </div>
+                <div class="services">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>WordPress</h2>
+                    <p>Harness the flexibility and power of WordPress with our expert services. We specialize in creating custom WordPress websites that are not only visually stunning but also easy to manage, giving your online presence the perfect blend of style and functionality.</p>
+                </div>
+                <div class="services">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Empower your digital journey with our top-notch web development services. We craft dynamic, user-centric websites that not only captivate your audience but also drive your business goals, ensuring your online presence is both impressive and effective.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portofolio Block -->
+        <section id="portfolio">
+            <div class="section-title">
+                <h2 class="sub-title">
+                    My Portfolio
+                </h2>
+                <h3 class="title">Awesome Works</h3>
+            </div>
+            <div class="project-list">
+                <div class="project">
+                    <img src="assets/project.PNG" alt="Project1">
+                    <div class="layer">
+                        <h2>Landing Page</h2>
+                        <p>"Maximize conversions and captivate your audience with our expertly crafted landing pages."</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/project2.PNG" alt="Project2">
+                    <div class="layer">
+                        <h2>Calculator</h2>
+                        <p>"Enhance user engagement and functionality on your website with our custom calculator solutions."</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Block -->
+        <section id="contact">
+            <div class="section-title">
+                <h2 class="sub-title">
+                    Contact Us
+                </h2>
+                <h3 class="title"></h3>
+            </div>
+            <div class="content">
+                <div class="contact-left">
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Your name" required />
+                        <input type="email" name="email" id="emial" placeholder="Your Email" required />
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message" /></textarea>
+                        <button type="submit">Send Now<i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="vl"></div>
+                <div class="contact-right">
+                    <div class="col address">
+                        <i class="fa-solid fa-location dot"></i>
+                        <div class="info">
+                            <h2 class="title">Address</h2>
+                            <p>Johar Town, Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="col phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="info">
+                            <h2 class="title">Phone</h2>
+                            <p>+92 317 4258607</p>
+                        </div>
+                    </div>
+                    <div class="col email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="info">
+                            <h2 class="title">Email</h2>
+                            <p>muazzamsindhu4393@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright Portfolio | Made with <i class="fa-solid fa-heart"></i> By <a href="#">MUAZZ</a>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
